@@ -3,6 +3,7 @@ import modalReducer from './modalSlice'
 import authReducer from "./authSlice"
 import premiumReducer from "./premiumSlice"
 import anonReducer from "./anonSlice"
+import menuReducer from "./bgrMenuSlice"
 
 
 export const store = configureStore({
@@ -11,6 +12,7 @@ export const store = configureStore({
     auth: authReducer,
     premium: premiumReducer,
     anon: anonReducer,
+    menu: menuReducer,
   },
 })
 

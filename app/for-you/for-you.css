@@ -184,3 +184,100 @@ max-width: 40%;
     height: 16px;
 }
 
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .row {
+    margin-left: 0;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .for-you__title {
+    font-size: 20px;
+  }
+
+  .for-you__sub--title {
+    font-size: 14px;
+  }
+
+  .selected__book{
+    width: 100%;
+  }
+  
+  .selected__book--content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .selected__book--text {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .selected__book--author{
+    margin-bottom: 8px;
+  }
+
+  .selected__book--icon{
+    font-size: 16px;
+  }
+
+  .book__image {
+    width: 140px;
+    height: auto;
+  }
+
+  .for-you__recommended {
+    overflow-x: scroll;
+  }
+
+  .rec__book--link {
+    padding: 10px;
+  }
+
+  .recommended__book--title {
+    font-size: 14px;
+  }
+
+  .recommended__book--author,
+  .recommended__book--sub-title {
+    font-size: 12px;
+  }
+
+  .rec__book--details-wrapper {
+    display: none;
+  }
+
+
+  .book__pill {
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+}
+@media (max-width: 480px) {
+  .for-you__recommended {
+    grid-template-columns: 1fr;
+  }
+
+  .book__image {
+    width: 120px;
+  }
+
+  .for-you__title {
+    font-size: 18px;
+  }
+}

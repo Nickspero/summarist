@@ -73,3 +73,12 @@
 .time{
     color: white;
 }
+
+@media (max-width:768px) {
+    .audio__wrapper{
+        flex-direction: column;
+        height: 160px;
+        padding: 16px;
+    }
+    input{width: 400px;}
+}

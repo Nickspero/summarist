@@ -13,7 +13,7 @@ import { setLoggedIn } from "../redux/authSlice";
 import { RootState } from "../redux/store";
 import Modal from "./Modal";
 import { open } from "../redux/modalSlice";
-import "./componentStyles/Sidebar.css"
+import "./componentStyles/Sidebar.css";
 
 const Sidebar = () => {
   const dispatch = useDispatch();
@@ -27,7 +27,6 @@ const Sidebar = () => {
   const handleLogin = () => {
     dispatch(open());
   };
-
 
   return (
     <div className="sidebar">

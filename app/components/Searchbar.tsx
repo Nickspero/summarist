@@ -3,6 +3,12 @@ import { CiSearch } from "react-icons/ci";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import "./componentStyles/Searchbar.css";
+import { CiMenuBurger } from "react-icons/ci";
+import HamburgerMenu from "./HamburgerMenu";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../redux/store";
+import { open} from "../redux/bgrMenuSlice"
+
 
 interface Book {
   id: string;
@@ -16,6 +22,8 @@ const Searchbar = () => {
   const [results, setResults] = useState<Book[]>([]);
   const [loading, setLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const dispatch = useDispatch()
+  const isMenuOpen = useSelector((state: RootState) => state.menu.value);
 
   useEffect(() => {
     if (!search.trim()) {
@@ -23,6 +31,9 @@ const Searchbar = () => {
       setIsOpen(false);
       return;
     }
+
+
+
 
     const timeout = setTimeout(async () => {
       setLoading(true);
@@ -91,6 +102,8 @@ const Searchbar = () => {
             </div>
           </div>
         </div>
+        <CiMenuBurger onClick={()=>{dispatch(open())}} className="bgr__menu"/>
+      {isMenuOpen && <HamburgerMenu/>}
       </div>
     </div>
   );
