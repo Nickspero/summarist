@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto, sans-serif;
-}
 .wrapper {
     position: relative;
     display: flex;
@@ -111,12 +105,16 @@
     margin-bottom: 40px;
     font-size: 18px;
     transition: color .2s;
-    cursor: not-allowed;
+    cursor: pointer;
+    width: max-content;
 }
 .inner-book__bookmark--icon {
     display: flex;
-    width: 20px;
-    height: 20px;
+    align-items: center;
+}
+.bmark__icon{
+    color: blue;
+    font-size: 24px;
 }
 .inner-book__secondary--title {
     font-size: 18px;

@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Provider } from "react-redux";
-import { store } from "../app/redux/store";
 import { Providers } from "./providers";
 import AuthListener from "./components/AuthListener";
 

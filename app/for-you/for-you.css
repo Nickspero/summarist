@@ -13,175 +13,73 @@ body {
   transition: all 0.3s;
 }
 
-.book__pill {
-    background-color: #032b41;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: 18px;
-    padding: 0 8px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #fff;
-    font-size: 10px;
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-}
-
-/* SELECTED */
 .row {
-    max-width: 1070px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 24px;
+  max-width: 1070px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 .container {
-    padding: 40px 0;
-    width: 100%;
-}
-.for-you__title {
-    font-size: 22px;
-    font-weight: 700;
-    color: #032b41;
-    margin-bottom: 16px;
+  padding: 40px 0;
+  width: 100%;
 }
 .selected__book {
-    display: flex;
-    justify-content: space-between;
-    width: max-content;
-    background-color: #fbefd6;
-    border-radius: 4px;
-    padding: 24px;
-    margin-bottom: 24px;
-    max-width: 720px;
-    gap: 24px;
+  background-color: #fbefd6;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  max-width: 720px;
 }
-.link{
-    width: max-content;
+.selected__book--link{
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  gap: 24px;
 }
 .selected__book--line {
-    width: 1px;
-    background-color: #bac8ce;
+  width: 1px;
+  background-color: #bac8ce;
 }
-.selected__book--sub-title{
-max-width: 40%;
+.selected__book--sub-title {
+  max-width: 40%;
 }
 .selected__book--content {
-    display: flex;
-    gap: 16px;
-    width: 60%;
+  display: flex;
+  gap: 16px;
+  width: 60%;
 }
 .selected__book--text {
-    width: 100%;
+  width: 100%;
 }
 .selected__book--title {
-    font-weight: 600;
-    color: #032b41;
-    margin-bottom: 8px;
+  font-weight: 600;
+  color: #032b41;
+  margin-bottom: 8px;
 }
 .selected__book--author {
-    font-size: 14px;
-    color: #394547;
-    margin-bottom: 16px;
+  font-size: 14px;
+  color: #394547;
+  margin-bottom: 16px;
 }
 .selected__book--duration-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .selected__book--icon {
-    color: white;
-    background-color: black;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    font-size: 24px;
-    font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  font-size: 24px;
+  font-weight: bold;
 }
 .selected__book--duration {
-    font-size: 14px;
-    font-weight: 500;
-    color: #032b41;
-}
-
-/* RECOMMENDED */
-.for-you__title {
-    font-size: 22px;
-    font-weight: 700;
-    color: #032b41;
-    margin-bottom: 16px;
-}
-.for-you__sub--title {
-    font-weight: 300;
-    color: #394547;
-    margin-bottom: 16px;
-}
-.for-you__recommended {
-    display: flex;
-    overflow-x: auto;
-    gap: 16px;
-    scroll-snap-type: mandatory;
-    scroll-snap-type: x;
-    margin-bottom: 32px;
-}
-.rec__book--link{
-    position: relative;
-    scroll-snap-align: start;
-    padding: 32px 12px 12px;
-    text-decoration: none;
-    border-radius: 4px;
-    max-width: 200px;
-    width: 100%;
-
-}
-.rec__book--link:hover{
-    background-color: #ffecec;
-
-}
-.book__image--wrapper {
-    width: 100%;
-    height: 172px;
-}
-.book__image {
-    width: 100%;
-    height: 100%;
-}
-.recommended__book--title {
-    font-size: 16px;
-    font-weight: 700;
-    color: #032b41;
-    margin-bottom: 8px;
-}
-.recommended__book--author {
-    font-size: 14px;
-    color: #6b757b;
-    font-weight: 300;
-    margin-bottom: 8px;
-}
-.recommended__book--sub-title {
-    font-size: 14px;
-    color: #394547;
-    margin-bottom: 8px;
-}
-.rec__book--details-wrapper {
-    display: flex;
-    gap: 8px;
-}
-.rec__book--details {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    font-size: 14px;
-    font-weight: 300;
-    color: #6b757b;
-}
-.recommended__book--details-icon {
-    display: flex;
-    width: 16px;
-    height: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #032b41;
 }
 
 @media (max-width: 768px) {
@@ -203,18 +101,10 @@ max-width: 40%;
     display: none;
   }
 
-  .for-you__title {
-    font-size: 20px;
-  }
-
-  .for-you__sub--title {
-    font-size: 14px;
-  }
-
-  .selected__book{
+  .selected__book {
     width: 100%;
   }
-  
+
   .selected__book--content {
     flex-direction: column;
     align-items: center;
@@ -228,56 +118,12 @@ max-width: 40%;
     align-items: center;
   }
 
-  .selected__book--author{
+  .selected__book--author {
     margin-bottom: 8px;
   }
 
-  .selected__book--icon{
+  .selected__book--icon {
     font-size: 16px;
   }
 
-  .book__image {
-    width: 140px;
-    height: auto;
-  }
-
-  .for-you__recommended {
-    overflow-x: scroll;
-  }
-
-  .rec__book--link {
-    padding: 10px;
-  }
-
-  .recommended__book--title {
-    font-size: 14px;
-  }
-
-  .recommended__book--author,
-  .recommended__book--sub-title {
-    font-size: 12px;
-  }
-
-  .rec__book--details-wrapper {
-    display: none;
-  }
-
-
-  .book__pill {
-    font-size: 10px;
-    padding: 4px 6px;
-  }
-}
-@media (max-width: 480px) {
-  .for-you__recommended {
-    grid-template-columns: 1fr;
-  }
-
-  .book__image {
-    width: 120px;
-  }
-
-  .for-you__title {
-    font-size: 18px;
-  }
 }

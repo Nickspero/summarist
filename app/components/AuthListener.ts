@@ -5,7 +5,7 @@ import { auth } from "../firebase/init"
 import { useDispatch } from "react-redux"
 import { setLoggedIn } from "../redux/authSlice"
 import { setPremium } from "../redux/premiumSlice"
-import { checkPremiumStatus } from "../firebase/checkPremium" // make this file
+import { checkPremiumStatus } from "../firebase/checkPremium" 
 import { setAnonLoggedIn } from "../redux/anonSlice"
 
 export default function AuthListener({ app } : any) {

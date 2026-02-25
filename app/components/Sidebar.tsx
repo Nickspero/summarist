@@ -1,3 +1,4 @@
+"use client"
 import {
   CiHome,
   CiBookmark,
@@ -41,19 +42,19 @@ const Sidebar = () => {
             </div>
             <div className="sidebar__title">For you</div>
           </a>
-          <a className="sidebar__link disabled" href="/for-you">
+          <a className="sidebar__link" href="/library">
             <div className="sidebar__icon">
               <CiBookmark />
             </div>
             <div className="sidebar__title">My Library</div>
           </a>
-          <a className="sidebar__link disabled" href="/for-you">
+          <a className="sidebar__link disabled">
             <div className="sidebar__icon">
               <CiEdit />
             </div>
             <div className="sidebar__title">Highlights</div>
           </a>
-          <a className="sidebar__link disabled" href="/for-you">
+          <a className="sidebar__link disabled">
             <div className="sidebar__icon">
               <CiSearch />
             </div>
