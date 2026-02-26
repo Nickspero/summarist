@@ -36,10 +36,7 @@ const Book = ({
             Premium
           </div>
         ) : null}
-        <figure>
           <img className="book__image" src={img} alt={title} />
-        </figure>
-
         <div className="book__title">{title}</div>
         <div className="book__author">{author}</div>
         <div className="book__sub-title">{subtitle}</div>

@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import Searchbar from "../components/Searchbar";
 import Sidebar from "../components/Sidebar";
-import "../library/library.css";
 import { collection, getDocs } from "firebase/firestore";
 import { auth, db } from "../firebase/init";
 import { onAuthStateChanged } from "firebase/auth";

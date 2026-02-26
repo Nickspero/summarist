@@ -1,21 +1,4 @@
-.wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-left: 200px;
-    width: calc(100% - 200px);
-    transition: all .3s;
-}
-.row {
-    max-width: 1070px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 24px;
-}
-.container {
-    padding: 40px 0;
-    width: 100%;
-}
+
 .inner__wrapper {
     display: flex;
     gap: 16px;
@@ -160,10 +143,6 @@
 }
 
 @media (max-width: 768px) {
-    .wrapper{
-        margin-left: 0;
-        width: 100%;
-    }
     .inner__wrapper{
         flex-direction: column;
     }
