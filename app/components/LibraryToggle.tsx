@@ -35,7 +35,7 @@ const checkLibrary = async () => {
         id: bookInfo.id,
         rating: bookInfo.averageRating,
         subtitle: bookInfo.subTitle,
-        ideas: bookInfo.keyIdeas,
+        time: bookInfo.audioLink,
       });
       setChecked(true);
     } catch (error) {

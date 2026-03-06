@@ -31,6 +31,8 @@ const page = () => {
     return () => unsubscribe();
   }, []);
 
+  console.log(savedBooks)
+
   return (
     <div className="wrapper">
       <Searchbar />
@@ -49,7 +51,7 @@ const page = () => {
                   title={book.title}
                   subtitle={book.subtitle}
                   author={book.author}
-                  ideas={book.ideas}
+                  time={book.time}
                   rating={book.rating}
                   img={book.imageLink}
                 />
