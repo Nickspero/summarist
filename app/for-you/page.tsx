@@ -13,7 +13,7 @@ interface Book {
   title: string;
   author: string;
   imageLink: string;
-  audioLink: string;
+  audioLink: number;
   totalRating: number;
   averageRating: number;
   keyIdeas: number;
@@ -117,7 +117,7 @@ export default function ForYouPage() {
                 {loading
                   ? new Array(5).fill(0).map((_, i) => <BookSkeleton key={i} />)
                   : recommendedBooks.slice(0, 5).map((book) => (
-                    <Book key={book.id} id={book.id} bookObj={book} title={book.title} subtitle={book.subTitle} author={book.author} ideas={book.keyIdeas} rating={book.averageRating} img={book.imageLink} />
+                    <Book key={book.id} id={book.id} bookObj={book} title={book.title} subtitle={book.subTitle} author={book.author} time={book.audioLink} rating={book.averageRating} img={book.imageLink} />
                     ))}
               </div>
             </div>
@@ -130,7 +130,7 @@ export default function ForYouPage() {
                 {loading
                   ? new Array(5).fill(0).map((_, i) => <BookSkeleton key={i} />)
                   : suggestedBooks.slice(0, 5).map((book) => (
-                    <Book key={book.id} id={book.id} bookObj={book} title={book.title} subtitle={book.subTitle} author={book.author} ideas={book.keyIdeas} rating={book.averageRating} img={book.imageLink} />
+                    <Book key={book.id} id={book.id} bookObj={book} title={book.title} subtitle={book.subTitle} author={book.author} time={book.audioLink} rating={book.averageRating} img={book.imageLink} />
                     ))}
               </div>
             </div>

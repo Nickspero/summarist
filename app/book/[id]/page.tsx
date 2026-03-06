@@ -14,6 +14,7 @@ import { BookPageSkeleton } from "@/app/components/BookSkeleton";
 import { useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
 import LibraryToggle from "@/app/components/LibraryToggle";
+import AudioTime from "@/app/components/AudioTime";
 
 const bookPage = () => {
   const [bookInfo, setBookInfo] = useState<any>(null);
@@ -61,7 +62,7 @@ const bookPage = () => {
                       <div className="inner-book__icon">
                         <CiClock1 />
                       </div>
-                      <div className="inner-book__description--text">4:27</div>
+                      <AudioTime audioSrc = {bookInfo.audioLink}/>
                     </div>
                     <div className="inner-book__description">
                       <div className="inner-book__icon">

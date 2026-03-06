@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "../redux/store";
 import Link from "next/link";
 import { CiClock2, CiStar } from "react-icons/ci";
+import AudioTime from "./AudioTime";
 
 interface Props {
   bookObj: any;
@@ -11,7 +12,7 @@ interface Props {
   subtitle: string;
   author: string;
   img: string;
-  ideas: number;
+  time: number;
   rating: number;
 }
 
@@ -22,7 +23,7 @@ const Book = ({
   title,
   author,
   subtitle,
-  ideas,
+  time,
   rating,
 }: Props) => {
   const isPremium = useSelector((state: RootState) => state.premium.isPremium);
@@ -46,7 +47,7 @@ const Book = ({
             <div className="book__details--icon">
               <CiClock2 />
             </div>
-            <div>{ideas} key ideas</div>
+            <AudioTime audioSrc = {time}/>
           </div>
 
           <div className="book__details">

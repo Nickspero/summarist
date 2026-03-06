@@ -1,7 +1,9 @@
 "use client"
 import { useEffect, useRef, useState } from "react";
 import "./componentStyles/AudioPlayer.css"
+import formatTime from "./FormatTime";
 import { RiForward10Line, RiReplay10Line, RiPlayFill, RiPauseFill } from "react-icons/ri";
+import AudioTime from "./AudioTime";
 
 type Props = {
   audioSrc: string;
@@ -49,12 +51,6 @@ const AudioPlayer = ({ audioSrc, title, author, image }: Props) => {
     audioRef.current.currentTime = time;
   };
 
-  const formatTime = (time: number) => {
-    const min = Math.floor(time / 60);
-    const sec = Math.floor(time % 60).toString().padStart(2, "0");
-    return `${min}:${sec}`;
-  };
-
   return (
     <div className="audio__wrapper">
       <audio ref={audioRef} src={audioSrc} />
@@ -95,7 +91,7 @@ const AudioPlayer = ({ audioSrc, title, author, image }: Props) => {
           onChange={(e) => seek(Number(e.target.value))}
         />
 
-        <div className="time" >{formatTime(duration)}</div>
+        <AudioTime audioSrc = {audioSrc}/>
       </div>
     </div>
   );
