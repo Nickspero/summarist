@@ -16,7 +16,6 @@ interface Book {
   audioLink: number;
   totalRating: number;
   averageRating: number;
-  keyIdeas: number;
   type: string;
   status: string;
   subscriptionRequired: boolean;
